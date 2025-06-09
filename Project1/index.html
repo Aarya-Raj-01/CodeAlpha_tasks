@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Image gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="title-container">
+  <h1><span style="color:#B3CEE5;">Ima</span><span style="color:pink">ges</span></h1>
+   </div>
+  <div class="full-img" id="FullImgBox">
+  <img src="scoups.jpg" id="FullImg">
+    <span onclick="closeFullImg()">x</span>
+    <button class="prev"onclick="showPrevImage()">&#10094;
+    </button>
+    <button class="next"onclick="showNextImage()">&#10095;
+    </button>
+  </div> 
+  
+  <div class="img-gallery">
+    <img src="scoups.jpg" alt="scoups" onclick="openFullImg(this.src)">
+    <img src="han.jpg" alt="jeonghan" onclick="openFullImg(this.src)">
+    <img src="josh.jpg" alt="joshua" onclick="openFullImg(this.src)" >
+    <img src="jun.jpg" alt="jun" onclick="openFullImg(this.src)">
+    <img src="hoshi.jpg" alt="hoshi" onclick="openFullImg(this.src)">
+    <img src="wonu.jpg" alt="wonwoo" onclick="openFullImg(this.src)">
+    <img src="woozi.jpg" alt="woozi" onclick="openFullImg(this.src)">
+    <img src="the8.jpg" alt="Minghao" onclick="openFullImg(this.src)" >
+    <img src="mingyu.jpg" alt="mingyu" onclick="openFullImg(this.src)">
+    <img src="dk.jpg" alt="dk" onclick="openFullImg(this.src)">
+    <img src="sgk.jpg" alt="seungkwan" onclick="openFullImg(this.src)">
+    <img src="vernon.jpg" alt="vernon" onclick="openFullImg(this.src)">
+    <img src="dino.jpg" alt="dino" onclick="openFullImg(this.src)">
+  </div>
+   <script src="script.js"></script>
+</body>
+</html>

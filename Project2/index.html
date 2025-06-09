@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP3-player</title>
+  <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/7e78cac01c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="music-player" id="musicPlayer">
+   
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left" id="backIcon"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-solid fa-bars" id="menuIcon"></i>
+        </div>
+      </nav>
+      <img src="disk.png" class="song-img">
+
+        <h2 class="music-name">Shadow</h2>
+        <h3 class="artist-name">SVT</h3>
+     
+ 
+      <input type="range" value="0" id="progress" step="1">
+      <audio id="audio" src="Shadow.mp3"></audio>
+      <div class="time-container">
+        <span id="current-time">00:00</span>
+        <span id="duration">00:00</span>
+      </div>
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick = "playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+      </div>
+    </div>
+    <div class="mini-player hidden" id="miniPlayer">
+      <img src="disk.png" alt="cover" class="mini-img">
+      <div class="mini-info">
+        <h4 id="miniSong">Song Name</h4>
+        <p id="miniArtist">Artist</p>
+      </div>
+      <div class="mini-controls">
+        <i class="fa-solid fa-play" id="miniPlayPause"></i>
+      </div>
+    </div>
+  </div>
+  <div id="songListOverlay" class="song-list-overlay hidden">
+    <div class="song-list-container">
+      <ul id="songList"></ul>
+    </div>
+  </div>
+  <script src="song.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
